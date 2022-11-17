@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: soufan-service
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic
+
+
+
+#chaves de criacao para acessar e criar coneções
+key-name-acess:
+  public: #key public de acesso a marvel
+  private: #key privada de acesso api marvel
+feign-keys:
+  url: "http://gateway.marvel.com"
+
+
