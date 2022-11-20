@@ -12,7 +12,7 @@ feign:
 
 
 
-#chaves de criacao para acessar e criar coneções
+#chaves de criacao para acessar e criar coneï¿½ï¿½es
 key-name-acess:
   public: #key public de acesso a marvel
   private: #key privada de acesso api marvel

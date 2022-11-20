@@ -1,6 +1,6 @@
 package com.learning.feign.soufan.builder;
 
-import com.learning.feign.soufan.service.dto.HeroDTO;
+import com.learning.feign.soufan.service.dto.HeroDetailsDTO;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
@@ -8,8 +8,8 @@ import java.time.LocalDate;
 @Component
 public class HeroBuilder {
 
-    public HeroDTO retornaHeroCriado(){
-        return HeroDTO.builder()
+    public HeroDetailsDTO retornaHeroCriado(){
+        return HeroDetailsDTO.builder()
                 .id(1009351)
                 .name("Hulk")
                 .description("Caught in a gamma bomb explosion while trying to save the life of a teenager," +

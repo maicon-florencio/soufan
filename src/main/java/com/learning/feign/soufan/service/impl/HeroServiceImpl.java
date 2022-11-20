@@ -1,7 +1,7 @@
 package com.learning.feign.soufan.service.impl;
 
 import com.learning.feign.soufan.service.HeroService;
-import com.learning.feign.soufan.service.dto.HeroDTO;
+import com.learning.feign.soufan.service.dto.HeroDetailsDTO;
 import com.learning.feign.soufan.service.feign.FeignnApiMarvel;
 import com.learning.feign.soufan.util.HashUtil;
 import com.learning.feign.soufan.util.HeroUtil;
@@ -24,7 +24,7 @@ public class HeroServiceImpl implements HeroService {
     }
 
     @Override
-    public HeroDTO buscarPorNome(String nome) throws NoSuchAlgorithmException {
+    public HeroDetailsDTO buscarPorNome(String nome) throws NoSuchAlgorithmException {
         if(nome ==null)
             throw new RuntimeException("Value not found ");
      return apiMarvelService.buscarHeroPorNome(nome, HeroUtil.TS1,
@@ -32,7 +32,7 @@ public class HeroServiceImpl implements HeroService {
     }
 
     @Override
-    public List<HeroDTO> buscarTodosOsHero() throws NoSuchAlgorithmException {
+    public List<HeroDetailsDTO> buscarTodosOsHero() throws NoSuchAlgorithmException {
         return apiMarvelService.buscarTodosHeros(HeroUtil.TS1, apiKeyPu
                 ,HashUtil.encodeForHashPorParams(criarStringToHash(),HeroUtil.MD5) );
 
