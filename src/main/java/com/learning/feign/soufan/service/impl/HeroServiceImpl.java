@@ -32,7 +32,7 @@ public class HeroServiceImpl implements HeroService {
     }
 
     @Override
-    public List<HeroDetailsDTO> buscarTodosOsHero() throws NoSuchAlgorithmException {
+    public HeroDetailsDTO buscarTodosOsHero() throws NoSuchAlgorithmException {
         return apiMarvelService.buscarTodosHeros(HeroUtil.TS1, apiKeyPu
                 ,HashUtil.encodeForHashPorParams(criarStringToHash(),HeroUtil.MD5) );
 

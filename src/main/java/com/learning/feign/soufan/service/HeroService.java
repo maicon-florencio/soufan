@@ -8,5 +8,5 @@ import java.util.List;
 public interface HeroService {
 
     HeroDetailsDTO buscarPorNome(String nome) throws NoSuchAlgorithmException;
-    List<HeroDetailsDTO> buscarTodosOsHero() throws NoSuchAlgorithmException;
+    HeroDetailsDTO buscarTodosOsHero() throws NoSuchAlgorithmException;
 }

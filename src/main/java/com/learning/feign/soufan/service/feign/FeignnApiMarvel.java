@@ -19,7 +19,7 @@ public interface FeignnApiMarvel {
 
 
     @GetMapping("/v1/public/characters")
-    List<HeroDetailsDTO> buscarTodosOsHeroAPI(@RequestParam("ts") String pTs,
+    HeroDetailsDTO buscarTodosOsHeroAPI(@RequestParam("ts") String pTs,
                                               @RequestParam("apikey") String pApiKey,
                                               @RequestParam("hash") String pHash) ;
 
@@ -28,7 +28,7 @@ public interface FeignnApiMarvel {
         return buscarHeroPorNomeAPI(name, ts, apiKey, hash);
     }
 
-    default List<HeroDetailsDTO> buscarTodosHeros(String ts, String apiKey, String hash){
+    default HeroDetailsDTO buscarTodosHeros(String ts, String apiKey, String hash){
         return buscarTodosOsHeroAPI(ts, apiKey, hash);
     }
 

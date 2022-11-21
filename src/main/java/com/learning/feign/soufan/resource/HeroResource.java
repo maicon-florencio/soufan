@@ -21,7 +21,7 @@ public class HeroResource {
 
 
     @GetMapping
-    public ResponseEntity<List<HeroDetailsDTO>> listaTodos() throws NoSuchAlgorithmException {
+    public ResponseEntity<HeroDetailsDTO> listaTodos() throws NoSuchAlgorithmException {
         return ResponseEntity.ok(heroService.buscarTodosOsHero());
     }
 
