@@ -1,9 +1,7 @@
 package com.learning.feign.soufan.service.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -12,6 +10,8 @@ import java.util.List;
 @Setter
 @Getter
 @AllArgsConstructor
+@Builder
+@NoArgsConstructor
 public class CharacterDTO implements Serializable {
 
     private int id;

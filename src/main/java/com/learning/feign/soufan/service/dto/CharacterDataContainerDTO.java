@@ -1,8 +1,6 @@
 package com.learning.feign.soufan.service.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.io.Serializable;
 import java.util.List;
@@ -10,6 +8,8 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 @Setter
+@Builder
+@NoArgsConstructor
 public class CharacterDataContainerDTO implements Serializable {
     private int offset;
     private int limit;

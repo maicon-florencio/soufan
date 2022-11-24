@@ -25,7 +25,7 @@ public class HeroResource {
         return ResponseEntity.ok(heroService.buscarTodosOsHero());
     }
 
-    @GetMapping("/{nome}")
+    @GetMapping("buscar-hero-por-nome/{nome}")
     public ResponseEntity<HeroDetailsDTO> buscarHeroPorNome(@PathVariable("nome") String nome) throws NoSuchAlgorithmException {
         return ResponseEntity.ok(heroService.buscarPorNome(nome));
     }
