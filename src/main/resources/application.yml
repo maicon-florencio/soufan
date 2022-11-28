@@ -14,8 +14,8 @@ feign:
 
 #chaves de criacao para acessar e criar cone��es
 key-name-acess:
-  public: #key public de acesso a marvel
-  private: #key privada de acesso api marvel
+  public: "70c385068bc554dc55e42612f55afe95"
+  private: "6f1d0c4e528e39f3b5dffc0451d175e6a66a0bf0"
 feign-keys:
   url: "http://gateway.marvel.com"
 
