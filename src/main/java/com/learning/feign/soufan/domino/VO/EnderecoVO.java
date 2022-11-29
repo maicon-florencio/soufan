@@ -1,4 +1,4 @@
-package com.learning.feign.soufan.domino;
+package com.learning.feign.soufan.domino.VO;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -7,10 +7,10 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
-public class Endereco implements Serializable {
+public class EnderecoVO implements Serializable {
 
     private Long id;
     private String cep;
