@@ -1,5 +1,5 @@
 # soufan
-projeto que visa usar o feign e resttample
+projeto que visa aplicar algumas technologias atuais e outras ja conhecidas para fins de estudo.
 
 
 PARA QUE SEJA USADO A API DA MARVEL 
