@@ -1,6 +1,9 @@
 spring:
   application:
     name: soufan-service
+  mvc:
+    pathmatch:
+      matching-strategy: path_pattern_parser
 
 feign:
   client:
@@ -11,11 +14,10 @@ feign:
         loggerLevel: basic
 
 
-
 #chaves de criacao para acessar e criar cone��es
 key-name-acess:
   public:
-  private: 
+  private:
 feign-keys:
   url: "http://gateway.marvel.com"
 
