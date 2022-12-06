@@ -1,4 +1,4 @@
-package com.learning.feign.soufan.resource;
+package com.learning.feign.soufan.rest;
 
 import com.learning.feign.soufan.service.HeroService;
 import com.learning.feign.soufan.service.dto.HeroDetailsDTO;
@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.security.NoSuchAlgorithmException;
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/heros")

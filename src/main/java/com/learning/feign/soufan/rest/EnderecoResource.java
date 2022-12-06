@@ -1,4 +1,4 @@
-package com.learning.feign.soufan.resource;
+package com.learning.feign.soufan.rest;
 
 import com.learning.feign.soufan.service.EnderecoService;
 import com.learning.feign.soufan.service.dto.EnderecoDTO;

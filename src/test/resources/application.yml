@@ -1,0 +1,39 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: soufan-service
+  mvc:
+    pathmatch:
+      matching-strategy: path_pattern_parser
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_products?useTimezone=true&serverTimezone=UTC
+    username: root
+    password: root123
+    jpa:
+      hibernate:
+        ddl-auto: update
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQL8Dialect
+      show-sql: false
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic
+
+
+
+#chaves de criacao para acessar e criar cone��es
+key-name-acess:
+  public: "70c385068bc554dc55e42612f55afe95"
+  private: "6f1d0c4e528e39f3b5dffc0451d175e6a66a0bf0"
+feign-keys:
+  url: "http://gateway.marvel.com"
+
+
