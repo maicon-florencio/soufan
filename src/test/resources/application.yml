@@ -8,9 +8,6 @@ spring:
       matching-strategy: path_pattern_parser
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/db_products?useTimezone=true&serverTimezone=UTC
-    username: root
-    password: root123
     jpa:
       hibernate:
         ddl-auto: update
